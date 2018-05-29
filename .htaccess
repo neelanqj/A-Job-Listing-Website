@@ -1,0 +1,14 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.view\.php -f
+RewriteRule ^(.*)$ $1.view.php
+
+RewriteRule ^wecare/?$ /apps\/view/ [L,NC]
+RewriteRule ^wecare/(.+)$ /apps\/view/$1 [L,NC]
+
+
+DirectoryIndex /apps/view/mainall.view.php

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+.logo {
+		background-image:url(../img/door.jpg);
+		background-repeat:no-repeat;
+}
+
+.loginform {
+	padding:20px;
+	}
+	
+.bar {
+    height: 18px;
+    background: green;
+}
+
+.padsides {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* AJAX loader CSS */
+.centerimage {
+   position:fixed;
+   top: 50%;
+   left: 50%;
+   width: 508px;
+   height: 381px;
+   margin-top: -254px; /* Half the height */
+   margin-left: -190.5px; /* Half the width */
+   box-shadow: 0.5em 0.5em 0.7em #333;
+   }
+   
+.wordwrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+   }
+   
+/* Page Lenght */
+#scroll { height: 800px; overflow-y: scroll; overflow-x: hide }
+#scroll div { background-color: #eee; margin: 5px; height: 100px; }
+.mini-image { margin-left: 10px; width: 16px; height: 16px; }
